@@ -4,6 +4,47 @@
   box-sizing: border-box;
 }
 
+:root {
+  /* Primary green scale */
+  --color-primary-50: #e8f5e9;
+  --color-primary-100: #c8e6c9;
+  --color-primary-200: #a5d6a7;
+  --color-primary-300: #81c784;
+  --color-primary-400: #66bb6a;
+  --color-primary-500: #4caf50; /* Màu chính */
+  --color-primary-600: #43a047;
+  --color-primary-700: #388e3c;
+  --color-primary-800: #2e7d32;
+  --color-primary-900: #1b5e20;
+
+  /* Accent */
+  --color-accent: #f2c94c;
+
+  /* Neutral / Background / Text */
+  --color-bg-light: #fafafa;
+  --color-bg-dark: #e0e0e0;
+  --color-text: #707070;
+  --color-text-bolder: #121212;
+  --color-muted: #757575;
+}
+
+@font-face {
+  font-family: "Montserrat-italic";
+  src: url(./assets/fonts/Montserrat-Italic-VariableFont_wght.ttf);
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(./assets/fonts/Montserrat-VariableFont_wght.ttf);
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
 html {
-  font-size: 62.5%;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
 }
