@@ -56,13 +56,14 @@ header {
 
 /* Hero section */
 .hero {
-  min-height: 100vh;
+  min-height: 600px;
   display: flex;
+  border-bottom: solid 2px var(--color-text);
 }
 
-.hero-container {
+.hero__main {
   width: 50%;
-  margin: 48px 36px;
+  margin: 0 36px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -70,8 +71,82 @@ header {
   color: var(--color-text);
 }
 
-.hero-title {
+.hero__title {
   margin-bottom: 12px;
   font-family: "Montserrat-italic", sans-serif;
   font-style: italic;
+}
+
+.hero__description {
+  margin-bottom: 36px;
+}
+
+.hero__actions {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 16px;
+}
+
+.button--primary,
+.button--secondary {
+  padding: 24px 36px;
+  border-radius: 4px;
+  border: solid 1px var(--color-text);
+  background-color: var(--color-bg-light);
+  text-transform: capitalize;
+  color: var(--color-text);
+}
+
+.button--primary:hover,
+.button--secondary:hover {
+  cursor: pointer;
+  background-color: var(--color-accent);
+  color: var(--color-bg-light);
+  transform: scale(1.1);
+  border: none;
+}
+
+.hero__upload-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 72px;
+  width: 50%;
+  border-left: solid 2px var(--color-text);
+  padding: 0 36px;
+}
+
+.hero__upload-box > a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  gap: 24px;
+  padding: 150px;
+  border: dashed 2px var(--color-text);
+  border-radius: 4px;
+  background-color: var(--color-bg-light);
+  color: var(--color-text);
+}
+
+.hero__upload-box > a:hover {
+  background-color: var(--color-dark);
+  color: var(--color-primary-50);
+  transform: scale(1.1);
+  cursor: pointer;
+  transition: ease-in-out 0.2s;
+}
+
+.feather {
+  width: 72px;
+  height: 72px;
+  color: var(--color-text);
+  stroke-width: 1;
+}
+
+.hero__upload--title {
+  color: var(--color-text);
 }
