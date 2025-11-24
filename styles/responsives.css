@@ -1,0 +1,7 @@
+@media screen and (max-width: 1368px) {
+  .features__card-box {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+}
