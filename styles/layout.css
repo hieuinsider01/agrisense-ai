@@ -3,7 +3,7 @@ body {
 }
 /* Header section */
 header {
-  margin-bottom: 71px;
+  /* margin-bottom: 71px; */
   transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
   transform: translateY(0);
 }
